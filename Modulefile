@@ -1,11 +1,10 @@
-name    'luxflux-openvpn'
+name 'Analytical Labs-openvpn'
 version '1.1'
-source 'https://github.com/luxflux/puppet-openvpn'
-author 'luxflux'
+
+author 'Tom Barber'
 license 'UNKNOWN'
+project_page 'UNKNOWN'
+source 'https://github.com/luxflux/puppet-openvpn'
 summary 'UNKNOWN'
 description 'UNKNOWN'
-project_page 'UNKNOWN'
-
-## Add dependencies, if any:
 dependency 'ripienaar/concat'
