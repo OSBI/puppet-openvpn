@@ -3,7 +3,7 @@
 define openvpn::client($server, $remote_host = $fqdn) {
     exec {
         "generate certificate for ${name} in context of ${server}":
-            command  => ". ./vars && ./pkitool ${name}",
+            command  => "source ./vars && ./pkitool ${name}",
             cwd      => "/etc/openvpn/${server}/easy-rsa",
             creates  => "/etc/openvpn/${server}/easy-rsa/keys/${name}.crt",
             #provider => "shell",

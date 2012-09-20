@@ -11,7 +11,7 @@
     "Modulefile": "753930108902a97816c86283c5900c67",
     "README": "55e4cf7d308631377158cc98080add36",
     "Readme.markdown": "809a0b1577e4908fdffcb5b800cd835e",
-    "manifests/client.pp": "07de56ca1013b7d4bc67e36242d95658",
+    "manifests/client.pp": "122f08ba65291770746683d5e7e0245c",
     "manifests/init.pp": "4af3fe997d4f769600315e894a49e122",
     "manifests/option.pp": "e9fb5291f4e483125f4e4fcd20654f65",
     "manifests/server.pp": "4bc7a3321cf6fc026afeec09b5fa7cca",
