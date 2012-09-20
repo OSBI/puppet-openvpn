@@ -10,11 +10,11 @@
   "checksums": {
     "Modulefile": "753930108902a97816c86283c5900c67",
     "README": "55e4cf7d308631377158cc98080add36",
-    "Readme.markdown": "3d1942c02fdfbbcc11298d7012b61498",
+    "Readme.markdown": "809a0b1577e4908fdffcb5b800cd835e",
     "manifests/client.pp": "07de56ca1013b7d4bc67e36242d95658",
     "manifests/init.pp": "4af3fe997d4f769600315e894a49e122",
     "manifests/option.pp": "e9fb5291f4e483125f4e4fcd20654f65",
-    "manifests/server.pp": "30f23ae5d235e4aa1216ad0c31397596",
+    "manifests/server.pp": "862a33bd26725104c611c99f95f6c5a8",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/etc-default-openvpn.erb": "ca700862538e0173714d3ab9693f4803",
