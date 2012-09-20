@@ -71,21 +71,21 @@ define openvpn::server($country, $province, $city, $organization, $email) {
 
     exec {
         "generate dh param ${name}":
-            command  => "source ./vars && ./clean-all && ./build-dh",
+            command  => "bash -c 'source ./vars && ./clean-all && ./build-dh'",
             cwd      => "/etc/openvpn/${name}/easy-rsa",
             creates  => "/etc/openvpn/${name}/easy-rsa/keys/dh1024.pem",
             provider => "shell",
             require  => File["/etc/openvpn/${name}/easy-rsa/vars"];
 
         "initca ${name}":
-            command  => "source ./vars && ./pkitool --initca",
+            command  => "bash -c 'source ./vars && ./pkitool --initca'",
             cwd      => "/etc/openvpn/${name}/easy-rsa",
             creates  => "/etc/openvpn/${name}/easy-rsa/keys/ca.key",
             provider => "shell",
             require  => [ Exec["generate dh param ${name}"], File["/etc/openvpn/${name}/easy-rsa/openssl.cnf"] ];
 
         "generate server cert ${name}":
-            command  => "source ./vars && ./pkitool --server server",
+            command  => "bash -c 'source ./vars && ./pkitool --server server'",
             cwd      => "/etc/openvpn/${name}/easy-rsa",
             creates  => "/etc/openvpn/${name}/easy-rsa/keys/server.key",
             provider => "shell",

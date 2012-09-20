@@ -14,7 +14,7 @@
     "manifests/client.pp": "a3f455c65ff92f859f5015cd6b0575ef",
     "manifests/init.pp": "4af3fe997d4f769600315e894a49e122",
     "manifests/option.pp": "e9fb5291f4e483125f4e4fcd20654f65",
-    "manifests/server.pp": "4bc7a3321cf6fc026afeec09b5fa7cca",
+    "manifests/server.pp": "fd62c38dc0c7e5d4be00605e4c455f9d",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/etc-default-openvpn.erb": "ca700862538e0173714d3ab9693f4803",
