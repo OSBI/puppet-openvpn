@@ -120,6 +120,18 @@ define openvpn::server($country, $province, $city, $organization, $email) {
             value   => "/etc/openvpn/${name}/keys/dh1024.pem",
             require => Exec["generate dh param ${name}"],
             server  => "${name}";
+        "ifconfig ips":
+            key => "ifconfig",
+            value => "10.50.34.1 10.50.34.2",
+            server => "${name}";
+        "ifconfig-pool-persist":
+            key => "ifconfig-pool-persist",
+            value => "/tmp/ipp.txt",
+            server => "${name}";
+        "server ips":
+            key => "server",
+            value => "10.8.0.0 255.255.255.0",
+            server => "${name}";
     }
 
     concat::fragment {
